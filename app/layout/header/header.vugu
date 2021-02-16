@@ -1,0 +1,16 @@
+
+<header class="header">
+  <p>sssdsdweewewwewewe</p>
+</header>
+
+<script type="application/x-go">
+
+import "fmt"
+
+type Header struct {}
+
+func (c *Header) BeforeBuild() {
+  fmt.Println("sss")
+}
+
+</script>

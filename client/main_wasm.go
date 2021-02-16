@@ -7,8 +7,6 @@ import (
 
 	"flag"
 
-	"github.com/virgil/vugu-test/app"
-
 	"github.com/vugu/vugu"
 	"github.com/vugu/vugu/domrender"
 )
@@ -32,8 +30,7 @@ func main() {
 		panic(err)
 	}
 
-	// rootBuilder := &Root{}
-	rootBuilder := app.VuguSetup(buildEnv, renderer.EventEnv())
+	rootBuilder := &Root{}
 
 	for ok := true; ok; ok = renderer.EventWait() {
 
